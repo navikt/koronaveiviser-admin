@@ -7,13 +7,8 @@ export default () =>
     .items([
       S.documentListItem()
         .id("whatsYourSituation")
-        .schemaType("whatsYourSituation")
+        .schemaType("linkList")
         .title("Hva er din situasjon?"),
-
-      S.documentListItem()
-        .id("allSituations")
-        .schemaType("allSituations")
-        .title("Alle situasjoner"),
 
       ...S.documentTypeListItems().filter(
         ({ spec }) => spec.id !== "channel" && spec.id !== "theme"
