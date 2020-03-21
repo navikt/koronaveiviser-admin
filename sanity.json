@@ -7,6 +7,14 @@
     "projectId": "34cdxjt2",
     "dataset": "production"
   },
+  "env": {
+    "development": {
+      "plugins": ["@sanity/vision"],
+      "api": {
+        "dataset": "local"
+      }
+    }
+  },
   "plugins": [
     "@sanity/base",
     "@sanity/components",
@@ -14,13 +22,6 @@
     "@sanity/default-login",
     "@sanity/desk-tool"
   ],
-  "env": {
-    "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
-    }
-  },
   "parts": [
     {
       "name": "part:@sanity/base/schema",
