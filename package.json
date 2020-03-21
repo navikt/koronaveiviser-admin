@@ -1,5 +1,5 @@
 {
-  "name": "koronaveiviseradmin",
+  "name": "koronaveiviser-admin",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -8,7 +8,10 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
-    "test": "sanity check"
+    "build": "sanity build",
+    "test": "sanity check",
+    "docker-build": "docker build -t navikt/koronaveiviser-admin .",
+    "docker-start": "docker run --rm -p 8080:8080 navikt/koronaveiviser-admin"
   },
   "keywords": [
     "sanity"
