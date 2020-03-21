@@ -1,5 +1,5 @@
 export default {
-  name: "link_panel",
+  name: "link",
   type: "object",
   fields: [
     {
@@ -8,9 +8,9 @@ export default {
       type: "localeString"
     },
     {
-      name: "description",
-      title: "Beskrivelse",
-      type: "localeBlock"
+      name: "url",
+      title: "Lenke",
+      type: "localeUrl"
     }
   ]
 };
