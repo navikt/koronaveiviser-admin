@@ -2,6 +2,7 @@ import info from "react-icons/lib/md/info";
 
 export default {
   name: "textBlockWithTitle",
+  title: "seksjon",
   icon: info,
   type: "object",
   fields: [
@@ -18,7 +19,7 @@ export default {
   ],
   preview: {
     select: {
-      title: "context.nb"
+      title: "title.nb"
     }
   }
 };
