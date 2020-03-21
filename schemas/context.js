@@ -1,6 +1,9 @@
+import list from "react-icons/lib/md/list";
+
 export default {
   name: "context",
   title: "Alle situasjoner",
+  icon: list,
   type: "document",
   fields: [
     {
