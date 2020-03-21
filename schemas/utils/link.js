@@ -12,5 +12,10 @@ export default {
       title: "Lenke",
       type: "localeUrl"
     }
-  ]
+  ],
+  preview: {
+    select: {
+      title: "title.nb"
+    }
+  }
 };
