@@ -7,8 +7,10 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 // We import object and document schemas
 import alert from "./alert";
 import context from "./context";
+import information from "./information";
 import link from "./utils/link";
 import linkList from "./utils/link-list";
+import textBlockWithTitle from "./utils/text-block-with-title";
 import { localeBlock, localeString, localeUrl } from "./utils/localization";
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -23,6 +25,8 @@ export default createSchema({
     alert,
     link,
     linkList,
+    textBlockWithTitle,
+    information,
 
     // Localization
     localeString,

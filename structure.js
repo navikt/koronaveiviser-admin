@@ -1,5 +1,6 @@
 import S from "@sanity/desk-tool/structure-builder";
 import person from "react-icons/lib/md/person";
+import info from "react-icons/lib/go/info";
 
 // Complete structure
 export default () =>
@@ -9,10 +10,14 @@ export default () =>
       S.documentListItem()
         .id("whatsYourSituation")
         .schemaType("linkList")
-        .title("Hva er din situasjon?")
         .icon(person),
 
       ...S.documentTypeListItems().filter(
         ({ spec }) => spec.id !== "channel" && spec.id !== "theme"
-      )
+      ),
+
+      S.documentListItem()
+        .id("information")
+        .schemaType("information")
+        .icon(info)
     ]);
