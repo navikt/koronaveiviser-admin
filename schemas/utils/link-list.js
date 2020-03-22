@@ -1,5 +1,8 @@
+import tab from "react-icons/lib/md/tab";
+
 export default {
   name: "linkList",
+  icon: tab,
   type: "object",
   fields: [
     {

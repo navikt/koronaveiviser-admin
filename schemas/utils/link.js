@@ -1,6 +1,9 @@
+import arrow from "react-icons/lib/md/keyboard-arrow-right";
+
 export default {
   name: "link",
   type: "object",
+  icon: arrow,
   fields: [
     {
       name: "title",
