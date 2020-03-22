@@ -7,6 +7,12 @@ export default {
   type: "document",
   fields: [
     {
+      name: "order",
+      title: "Rekkefølge",
+      description: "Fra venstre til høyre",
+      type: "number"
+    },
+    {
       name: "context",
       title: "Arbeidsflate",
       type: "localeString"
