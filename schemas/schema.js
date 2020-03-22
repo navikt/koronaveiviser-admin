@@ -10,6 +10,7 @@ import context from "./context";
 import information from "./information";
 import link from "./utils/link";
 import linkList from "./utils/link-list";
+import related from "./related";
 import textBlockWithTitle from "./utils/text-block-with-title";
 import { localeBlock, localeString, localeUrl } from "./utils/localization";
 
@@ -27,6 +28,7 @@ export default createSchema({
     linkList,
     textBlockWithTitle,
     information,
+    related,
 
     // Localization
     localeString,
