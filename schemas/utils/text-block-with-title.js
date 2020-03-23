@@ -15,11 +15,26 @@ export default {
       name: "description",
       title: "Temaer",
       type: "localeBlock"
+    },
+    {
+      name: "anchor",
+      title: "ID / Anker",
+      type: "string"
     }
   ],
   preview: {
     select: {
-      title: "title.nb"
+      title: "title.nb",
+      anchor: "anchor"
+    },
+    prepare(selection) {
+      const { title, anchor } = selection;
+      return {
+        title: title,
+        ...(anchor && {
+          subtitle: `https://www.nav.no/person/koronaveiviser/#${anchor}`
+        })
+      };
     }
   }
 };
