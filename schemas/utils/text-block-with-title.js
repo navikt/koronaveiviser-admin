@@ -26,7 +26,7 @@ export default {
   preview: {
     select: {
       title: "title.nb",
-      anchor: "anchor"
+      anchor: "anchor.current"
     },
     prepare(selection) {
       const { title, anchor } = selection;
