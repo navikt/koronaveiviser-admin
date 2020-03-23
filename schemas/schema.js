@@ -11,6 +11,7 @@ import information from "./information";
 import link from "./utils/link";
 import linkList from "./utils/link-list";
 import related from "./related";
+import page from "./page";
 import textBlockWithTitle from "./utils/text-block-with-title";
 import { localeBlock, localeString, localeUrl } from "./utils/localization";
 
@@ -22,6 +23,7 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     // Content types
+    page,
     context,
     alert,
     link,

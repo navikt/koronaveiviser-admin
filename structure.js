@@ -2,12 +2,19 @@ import S from "@sanity/desk-tool/structure-builder";
 import person from "react-icons/lib/md/person";
 import info from "react-icons/lib/go/info";
 import list from "react-icons/lib/md/shuffle";
+import settings from "react-icons/lib/md/settings";
 
 // Complete structure
 export default () =>
   S.list()
     .title("Side")
     .items([
+      S.documentListItem()
+        .id("frontepage")
+        .title("Innstillinger")
+        .schemaType("page")
+        .icon(settings),
+
       S.documentListItem()
         .id("whatsYourSituation")
         .schemaType("linkList")
