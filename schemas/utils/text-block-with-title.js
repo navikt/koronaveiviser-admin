@@ -18,8 +18,9 @@ export default {
     },
     {
       name: "anchor",
+      description: "https://www.nav.no/person/koronaveiviser/#ditt-anker",
       title: "ID / Anker",
-      type: "string"
+      type: "slug"
     }
   ],
   preview: {
