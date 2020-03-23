@@ -10,7 +10,7 @@ export default {
     {
       name: "metaDescription",
       title: "Metabeskrivelse",
-      type: "localeBlock"
+      type: "localeString"
     }
   ],
   preview: {
