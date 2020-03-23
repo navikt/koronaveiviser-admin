@@ -1,9 +1,9 @@
-import info from "react-icons/lib/md/info";
+import arrow from "react-icons/lib/md/keyboard-arrow-down";
 
 export default {
   name: "textBlockWithTitle",
   title: "seksjon",
-  icon: info,
+  icon: arrow,
   type: "object",
   fields: [
     {
