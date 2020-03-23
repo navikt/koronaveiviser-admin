@@ -10,7 +10,7 @@ export default () =>
     .title("Side")
     .items([
       S.documentListItem()
-        .id("frontepage")
+        .id("frontpage")
         .title("Innstillinger")
         .schemaType("page")
         .icon(settings),
