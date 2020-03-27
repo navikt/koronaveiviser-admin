@@ -18,6 +18,12 @@ export default {
       type: "localeString"
     },
     {
+      name: "anchor",
+      description: "https://www.nav.no/person/koronaveiviser/#ditt-anker",
+      title: "ID / Anker",
+      type: "slug",
+    },
+    {
       name: "description",
       title: "Temaer",
       type: "array",
