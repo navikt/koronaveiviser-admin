@@ -28,6 +28,11 @@ export default {
       title: "Temaer",
       type: "array",
       of: [{ type: "linkList" }]
+    },
+    {
+      name: "info",
+      title: "Praktisk info",
+      type: "information",
     }
   ],
   preview: {
