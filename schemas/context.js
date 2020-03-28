@@ -13,6 +13,11 @@ export default {
       type: "number"
     },
     {
+      name: "title",
+      title: "Fane-tittel",
+      type: "localeString"
+    },
+    {
       name: "context",
       title: "Arbeidsflate",
       type: "localeString"
