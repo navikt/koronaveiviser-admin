@@ -26,7 +26,7 @@ export default {
 
       return {
         title: title,
-        subtitle: "https://www.nav.no/person/koronaveiviser/#arbeidsflate-id_"+anchor
+        subtitle: anchor ? "https://www.nav.no/person/koronaveiviser/#arbeidsflate-id_"+anchor : null
       }
     }
   }
