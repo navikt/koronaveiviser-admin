@@ -11,7 +11,7 @@ export default {
     },
     {
       name: "anchor",
-      description: "https://www.nav.no/person/koronaveiviser/#arbeidsflate-id_info-id",
+      description: "https://www.nav.no/person/koronaveiviser/#info-id",
       title: "Info-id / anker",
       type: "slug"
     },
@@ -26,7 +26,7 @@ export default {
 
       return {
         title: title,
-        subtitle: anchor ? "https://www.nav.no/person/koronaveiviser/#arbeidsflate-id_"+anchor : null
+        subtitle: anchor ? "https://www.nav.no/person/koronaveiviser/#" + anchor : null
       }
     }
   }
