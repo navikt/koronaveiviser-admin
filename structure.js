@@ -1,6 +1,7 @@
 import S from "@sanity/desk-tool/structure-builder";
 import person from "react-icons/lib/md/person";
 import list from "react-icons/lib/md/shuffle";
+import info from "react-icons/lib/go/info";
 import settings from "react-icons/lib/md/settings";
 
 // Complete structure
@@ -22,6 +23,11 @@ export default () =>
       ...S.documentTypeListItems().filter(
         ({ spec }) => spec.id !== "channel" && spec.id !== "theme"
       ),
+
+      S.documentListItem()
+      .id("information")
+      .schemaType("information")
+      .icon(info),
 
       S.documentListItem()
         .id("related")

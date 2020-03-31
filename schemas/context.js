@@ -14,7 +14,7 @@ export default {
     },
     {
       name: "title",
-      title: "Fane-tittel",
+      title: "Tittel",
       type: "localeString"
     },
     {
@@ -24,8 +24,8 @@ export default {
     },
     {
       name: "anchor",
-      description: "https://www.nav.no/person/koronaveiviser/#ditt-anker",
-      title: "ID / Anker",
+      description: "https://www.nav.no/person/koronaveiviser/#arbeidsflate-id",
+      title: "Arbeidsflate-id / anker",
       type: "slug",
     },
     {
@@ -35,9 +35,15 @@ export default {
       of: [{ type: "linkList" }]
     },
     {
-      name: "info",
-      title: "Praktisk info",
-      type: "information",
+      name: "infotitle",
+      title: "Praktisk informasjon tittel",
+      type: "localeString"
+    },
+    {
+      name: "inforefs",
+      title: "Praktisk informasjon",
+      type: "array",
+      of: [{ type: "inforef" }]
     }
   ],
   preview: {
