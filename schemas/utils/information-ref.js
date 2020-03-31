@@ -13,7 +13,7 @@ export default {
       name: "anchor",
       description: "https://www.nav.no/person/koronaveiviser/#arbeidsflate-id_info-id",
       title: "Info-id / anker",
-      type: "slug",
+      type: "slug"
     },
   ],
   preview: {
@@ -23,6 +23,7 @@ export default {
     },
     prepare(selection) {
       const { title, anchor } = selection;
+
       return {
         title: title,
         subtitle: "https://www.nav.no/person/koronaveiviser/#arbeidsflate-id_"+anchor

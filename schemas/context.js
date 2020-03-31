@@ -5,6 +5,7 @@ export default {
   title: "Alle situasjoner",
   icon: list,
   type: "document",
+  fieldsets: [{ name: "infoset", title: "Praktisk informasjon"}],
   fields: [
     {
       name: "order",
@@ -13,13 +14,13 @@ export default {
       type: "number"
     },
     {
-      name: "title",
-      title: "Tittel",
+      name: "context",
+      title: "Arbeidsflate",
       type: "localeString"
     },
     {
-      name: "context",
-      title: "Arbeidsflate",
+      name: "title",
+      title: "Tittel (vises inne i fanen)",
       type: "localeString"
     },
     {
@@ -36,14 +37,16 @@ export default {
     },
     {
       name: "infotitle",
-      title: "Praktisk informasjon tittel",
-      type: "localeString"
+      title: "Tittel",
+      type: "localeString",
+      fieldset: "infoset"
     },
     {
       name: "inforefs",
-      title: "Praktisk informasjon",
+      title: "Paneler",
       type: "array",
-      of: [{ type: "inforef" }]
+      of: [{ type: "inforef" }],
+      fieldset: "infoset"
     }
   ],
   preview: {
