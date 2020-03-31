@@ -1,7 +1,7 @@
 import S from "@sanity/desk-tool/structure-builder";
 import person from "react-icons/lib/md/person";
-import list from "react-icons/lib/md/shuffle";
 import info from "react-icons/lib/go/info";
+import list from "react-icons/lib/md/shuffle";
 import settings from "react-icons/lib/md/settings";
 
 // Complete structure
@@ -25,9 +25,9 @@ export default () =>
       ),
 
       S.documentListItem()
-      .id("information")
-      .schemaType("information")
-      .icon(info),
+        .id("information")
+        .schemaType("information")
+        .icon(info),
 
       S.documentListItem()
         .id("related")

@@ -30,10 +30,12 @@ export default createSchema({
     alert,
     link,
     linkList,
-    infopanel,
-    informationOld,
     related,
+    infopanel,
     inforef,
+
+    // Fjern etter at ny frontend er i prod
+    informationOld,
     textBlockWithTitle,
 
     // Localization
