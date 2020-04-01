@@ -25,8 +25,8 @@ export default {
     },
     {
       name: "anchor",
-      description: "https://www.nav.no/person/koronaveiviser/#arbeidsflate-id",
-      title: "Arbeidsflate-id / anker",
+      description: "https://www.nav.no/person/koronaveiviser/#ditt-anker",
+      title: "ID / Anker",
       type: "slug",
     },
     {
@@ -51,7 +51,15 @@ export default {
   ],
   preview: {
     select: {
-      title: "context.nb"
+      title: "context.nb",
+      anchor: "anchor.current"
+    },
+    prepare(selection) {
+      const { title, anchor } = selection;
+      return {
+        title: title,
+        subtitle: anchor ? "https://www.nav.no/person/koronaveiviser/#" + anchor : null
+      }
     }
   }
 };

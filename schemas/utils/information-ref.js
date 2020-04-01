@@ -11,8 +11,8 @@ export default {
     },
     {
       name: "anchor",
-      description: "https://www.nav.no/person/koronaveiviser/#info-id",
-      title: "Info-id / anker",
+      description: "https://www.nav.no/person/koronaveiviser/#ditt-anker",
+      title: "ID / Anker",
       type: "slug"
     },
   ],
@@ -23,7 +23,6 @@ export default {
     },
     prepare(selection) {
       const { title, anchor } = selection;
-
       return {
         title: title,
         subtitle: anchor ? "https://www.nav.no/person/koronaveiviser/#" + anchor : null
