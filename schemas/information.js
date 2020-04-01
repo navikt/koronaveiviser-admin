@@ -2,7 +2,7 @@ import info from "react-icons/lib/md/info";
 
 export default {
   name: "infopanel",
-  title: "Praktisk informasjon",
+  title: "Praktisk informasjon (NY)",
   type: "document",
   icon: info,
   fields: [
