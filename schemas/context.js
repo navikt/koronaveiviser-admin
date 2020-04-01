@@ -5,6 +5,7 @@ export default {
   title: "Alle situasjoner",
   icon: list,
   type: "document",
+  fieldsets: [{ name: "infoset", title: "Praktisk informasjon"}],
   fields: [
     {
       name: "order",
@@ -18,6 +19,11 @@ export default {
       type: "localeString"
     },
     {
+      name: "title",
+      title: "Tittel (vises inne i fanen)",
+      type: "localeString"
+    },
+    {
       name: "anchor",
       description: "https://www.nav.no/person/koronaveiviser/#ditt-anker",
       title: "ID / Anker",
@@ -28,11 +34,32 @@ export default {
       title: "Temaer",
       type: "array",
       of: [{ type: "linkList" }]
+    },
+    {
+      name: "infotitle",
+      title: "Tittel",
+      type: "localeString",
+      fieldset: "infoset"
+    },
+    {
+      name: "inforefs",
+      title: "Paneler",
+      type: "array",
+      of: [{ type: "inforef" }],
+      fieldset: "infoset"
     }
   ],
   preview: {
     select: {
-      title: "context.nb"
+      title: "context.nb",
+      anchor: "anchor.current"
+    },
+    prepare(selection) {
+      const { title, anchor } = selection;
+      return {
+        title: title,
+        subtitle: anchor ? "https://www.nav.no/person/koronaveiviser/#" + anchor : null
+      }
     }
   }
 };

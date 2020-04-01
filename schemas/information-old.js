@@ -1,10 +1,9 @@
 import info from "react-icons/lib/md/info";
 
 export default {
-  name: "infopanel",
-  title: "Praktisk informasjon (NY)",
-  type: "document",
+  name: "information",
   icon: info,
+  type: "object",
   fields: [
     {
       name: "title",
@@ -12,9 +11,10 @@ export default {
       type: "localeString"
     },
     {
-      name: "description",
-      title: "Temaer",
-      type: "localeBlock"
+      name: "sections",
+      title: "Seksjoner",
+      type: "array",
+      of: [{ type: "textBlockWithTitle" }]
     }
   ],
   preview: {
