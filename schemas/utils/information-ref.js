@@ -1,4 +1,3 @@
-
 export default {
   name: "inforef",
   type: "object",
@@ -7,14 +6,14 @@ export default {
       name: "ref",
       title: "Praktisk info",
       type: "reference",
-      to: [{type: "infopanel"}]
+      to: [{ type: "infopanel" }]
     },
     {
       name: "anchor",
       description: "https://www.nav.no/person/koronaveiviser/#ditt-anker",
       title: "ID / Anker",
       type: "slug"
-    },
+    }
   ],
   preview: {
     select: {
@@ -25,8 +24,10 @@ export default {
       const { title, anchor } = selection;
       return {
         title: title,
-        subtitle: anchor ? "https://www.nav.no/person/koronaveiviser/#" + anchor : null
-      }
+        subtitle: anchor
+          ? "https://www.nav.no/person/koronaveiviser/#" + anchor
+          : null
+      };
     }
   }
 };
