@@ -50,5 +50,10 @@ export default {
       type: "array",
       of: [{ type: "pageSection" }]
     }
-  ]
+  ],
+  preview: {
+    select: {
+      title: "pageTitle.nb"
+    }
+  }
 };

@@ -30,5 +30,10 @@ export default {
       name: "associatedURL",
       type: "localeUrl"
     }
-  ]
+  ],
+  preview: {
+    select: {
+      title: "linkBoxTitle.nb"
+    }
+  }
 };

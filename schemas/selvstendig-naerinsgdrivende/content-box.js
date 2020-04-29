@@ -15,5 +15,10 @@ export default {
       of: [{ type: "block" }]
     }
     // Kan hende det kommer flere felt enn dette, men vi begynner her.
-  ]
+  ],
+  preview: {
+    select: {
+      title: "contentBoxTitle.nb"
+    }
+  }
 };

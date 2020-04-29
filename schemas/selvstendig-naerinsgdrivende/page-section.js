@@ -14,5 +14,10 @@ export default {
       type: "array",
       of: [{ type: "linkBox" }, { type: "contentBox" }]
     }
-  ]
+  ],
+  preview: {
+    select: {
+      title: "sectionName.nb"
+    }
+  }
 };
