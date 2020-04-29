@@ -6,7 +6,7 @@ export default {
     {
       title: "Overskrift",
       name: "contentBoxTitle",
-      type: "string"
+      type: "localeString"
     },
     {
       title: "Innhold",

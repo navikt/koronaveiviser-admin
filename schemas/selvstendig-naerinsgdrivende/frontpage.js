@@ -6,25 +6,23 @@ export default {
     {
       title: "Sidetittel",
       name: "pageTitle",
-      type: "string"
+      type: "localeString"
     },
     {
       title: "Ingresstekst",
       description: "Valgfritt: legg inn en kort introduksjon",
       name: "pageIntroduction",
-      type: "array",
-      of: [{ type: "block" }]
+      type: "localeBlock"
     },
     {
       title: "Reklametittel",
       name: "heroTitle",
-      type: "string"
+      type: "localeString"
     },
     {
       title: "Reklameinnhold",
       name: "heroContent",
-      type: "array",
-      of: [{ type: "block" }]
+      type: "localeBlock"
     },
     {
       title: "Reklamebilde",
@@ -38,13 +36,13 @@ export default {
       title: "Reklamelenketekst",
       description: "Brukes som 'call to action' på lenke videre",
       name: "heroLinkText",
-      type: "string"
+      type: "localeString"
     },
     {
       title: "Reklame URL",
       description: "Dit vi skal lenke hen",
       name: "heroURL",
-      type: "url"
+      type: "localeUrl"
     },
     {
       title: "Hovedinnhold",

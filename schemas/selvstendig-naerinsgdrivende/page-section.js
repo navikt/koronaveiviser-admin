@@ -6,7 +6,7 @@ export default {
     {
       title: "Seksjonsnavn",
       name: "sectionName",
-      type: "string"
+      type: "localeString"
     },
     {
       title: "Seksjonsinnhold",

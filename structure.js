@@ -2,7 +2,7 @@ import S from "@sanity/desk-tool/structure-builder";
 import person from "react-icons/lib/md/person";
 import info from "react-icons/lib/go/info";
 import list from "react-icons/lib/md/shuffle";
-import settings from "react-icons/lib/md/settings";
+import settings from "react-icons/lib/go/settings";
 import arrow from "react-icons/lib/md/subdirectory-arrow-right";
 
 // Complete structure

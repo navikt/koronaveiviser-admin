@@ -6,14 +6,14 @@ export default {
     {
       title: "Overskrift",
       name: "linkBoxTitle",
-      type: "string"
+      type: "localeString"
     },
     {
       title: "Emneknagg",
       description:
         "Velg tilknyttet produkt eller område som skal synes i lenkeboksen. For eksempel: sykepenger, økonomisk sosialhjelp, eller skatteetaten",
       name: "subjectTag",
-      type: "string"
+      type: "localeString"
     },
     {
       title: "Ikon",
@@ -28,7 +28,7 @@ export default {
       description:
         "Sett in lenken til siden som skal lenkes til. Greit med 'Gå til' når vi lenker til ikke-NAV sider.",
       name: "associatedURL",
-      type: "url"
+      type: "localeUrl"
     }
   ]
 };
