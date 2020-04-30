@@ -12,7 +12,7 @@ export default {
       title: "Ingresstekst",
       description: "Valgfritt: legg inn en kort introduksjon",
       name: "pageIntroduction",
-      type: "localeBlock"
+      type: "localeString"
     },
     {
       title: "Reklametittel",
