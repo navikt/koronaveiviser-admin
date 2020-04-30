@@ -20,6 +20,7 @@ import snPageSection from "./selvstendig-naerinsgdrivende/page-section";
 import snLinkBox from "./selvstendig-naerinsgdrivende/link-box";
 import snContentBox from "./selvstendig-naerinsgdrivende/content-box";
 import snSubSection from "./selvstendig-naerinsgdrivende/sub-section";
+import snHero from "./selvstendig-naerinsgdrivende/hero";
 import { localeBlock, localeString, localeUrl } from "./utils/localization";
 import inforef from "./utils/information-ref";
 
@@ -51,6 +52,7 @@ export default createSchema({
     snLinkBox,
     snContentBox,
     snSubSection,
+    snHero,
 
     // Localization
     localeString,

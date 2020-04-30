@@ -15,34 +15,12 @@ export default {
       type: "localeString"
     },
     {
-      title: "Reklametittel",
-      name: "heroTitle",
-      type: "localeString"
-    },
-    {
-      title: "Reklameinnhold",
-      name: "heroContent",
-      type: "localeBlock"
-    },
-    {
-      title: "Reklamebilde",
-      name: "heroImage",
-      type: "image",
+      title: "Reklame",
+      name: "hero",
       options: {
-        hotspot: true
-      }
-    },
-    {
-      title: "Reklamelenketekst",
-      description: "Brukes som 'call to action' på lenke videre",
-      name: "heroLinkText",
-      type: "localeString"
-    },
-    {
-      title: "Reklame URL",
-      description: "Dit vi skal lenke hen",
-      name: "heroURL",
-      type: "localeUrl"
+        collapsible: true
+      },
+      type: "hero"
     },
     {
       title: "Hovedinnhold",
