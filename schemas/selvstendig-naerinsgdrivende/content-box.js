@@ -11,10 +11,8 @@ export default {
     {
       title: "Innhold",
       name: "contentBoxBody",
-      type: "array",
-      of: [{ type: "block" }]
+      type: "localeBlock"
     }
-    // Kan hende det kommer flere felt enn dette, men vi begynner her.
   ],
   preview: {
     select: {

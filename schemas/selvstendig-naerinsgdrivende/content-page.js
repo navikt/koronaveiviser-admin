@@ -9,7 +9,7 @@ export default {
     {
       title: "Sidetittel",
       name: "pageTitle",
-      type: "string"
+      type: "localeString"
     },
     {
       title: "Slug",
@@ -21,8 +21,7 @@ export default {
       title: "Ingresstekst",
       description: "Valgfritt: legg inn en kort introduksjon",
       name: "pageIntroduction",
-      type: "array",
-      of: [{ type: "block" }]
+      type: "localeBlock"
     },
     {
       title: "Hovedinnhold",
@@ -35,7 +34,7 @@ export default {
       description:
         "Valgfritt, men kanskje smart. For eksempel: 'Lenker videre'.",
       name: "linksSectionTitle",
-      type: "string"
+      type: "localeString"
     },
     {
       title: "Lenkebokser",
