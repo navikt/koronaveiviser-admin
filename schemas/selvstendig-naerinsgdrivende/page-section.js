@@ -13,6 +13,12 @@ export default {
       name: "sectionContent",
       type: "array",
       of: [{ type: "linkBox" }, { type: "contentBox" }]
+    },
+    {
+      name: "alerts",
+      title: "Varsler",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "alert"}] }]
     }
   ],
   preview: {
