@@ -2,7 +2,7 @@ import info from "react-icons/lib/go/info";
 import success from "react-icons/lib/go/check";
 import advarsel from "react-icons/lib/go/alert";
 import error from "react-icons/lib/go/x";
-import Checkboxes from "../../components/Checkboxes";
+import Checkboxes from "../components/Checkboxes";
 
 const types = {
   info: "Info",
@@ -64,7 +64,13 @@ export default {
       of: [{ type: "string" }],
       inputComponent: Checkboxes,
       options: {
-        list: [{ value: "forsiden", title: "Forsiden" }]
+        list: [
+          { value: "forsiden", title: "Koronaveiviseren" },
+          {
+            value: "selvstendig-naeringsdrivende",
+            title: "Selvstendig næringsdrivende"
+          }
+        ]
       }
     }
   ],

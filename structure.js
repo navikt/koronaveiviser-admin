@@ -32,10 +32,6 @@ export default () =>
                 ({ spec }) => spec.id === "context"
               ),
 
-              ...S.documentTypeListItems().filter(
-                ({ spec }) => spec.id === "alert"
-              ),
-
               S.documentListItem()
                 .id("information")
                 .schemaType("information")
@@ -64,5 +60,7 @@ export default () =>
                 ({ spec }) => spec.id === "snContentPage"
               )
             ])
-        )
+        ),
+
+      ...S.documentTypeListItems().filter(({ spec }) => spec.id === "alert")
     ]);

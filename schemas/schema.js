@@ -5,7 +5,7 @@ import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
 // We import object and document schemas
-import alert from "./koronaveiviser/alert";
+import alert from "./alert";
 import context from "./koronaveiviser/context";
 import infopanel from "./koronaveiviser/information";
 import informationOld from "./koronaveiviser/information-old";
