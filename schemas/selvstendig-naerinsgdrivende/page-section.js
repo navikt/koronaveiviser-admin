@@ -16,7 +16,7 @@ export default {
     },
     {
       name: "alerts",
-      title: "Varsler.",
+      title: "Varsler",
       type: "array",
       of: [{ type: "reference", to: [{ type: "alert"}] }]
     }
