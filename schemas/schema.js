@@ -15,9 +15,11 @@ import textBlockWithTitle from "./utils/text-block-with-title";
 import related from "./koronaveiviser/related";
 import page from "./koronaveiviser/page";
 import snFrontpage from "./selvstendig-naerinsgdrivende/frontpage";
+import snContentPage from "./selvstendig-naerinsgdrivende/content-page";
 import snPageSection from "./selvstendig-naerinsgdrivende/page-section";
 import snLinkBox from "./selvstendig-naerinsgdrivende/link-box";
 import snContentBox from "./selvstendig-naerinsgdrivende/content-box";
+import snSubSection from "./selvstendig-naerinsgdrivende/sub-section";
 import { localeBlock, localeString, localeUrl } from "./utils/localization";
 import inforef from "./utils/information-ref";
 
@@ -44,9 +46,11 @@ export default createSchema({
 
     // Selvstendig næringsdrivende
     snFrontpage,
+    snContentPage,
     snPageSection,
     snLinkBox,
     snContentBox,
+    snSubSection,
 
     // Localization
     localeString,

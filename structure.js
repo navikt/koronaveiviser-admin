@@ -58,7 +58,11 @@ export default () =>
                 .id("sn-frontpage")
                 .title("Forsiden")
                 .schemaType("snFrontpage")
-                .icon(settings)
+                .icon(settings),
+
+              ...S.documentTypeListItems().filter(
+                ({ spec }) => spec.id === "snContentPage"
+              )
             ])
         )
     ]);
