@@ -43,5 +43,10 @@ export default {
       type: "array",
       of: [{ type: "linkBox" }]
     }
-  ]
+  ],
+  preview: {
+    select: {
+      title: "pageTitle.nb"
+    }
+  }
 };

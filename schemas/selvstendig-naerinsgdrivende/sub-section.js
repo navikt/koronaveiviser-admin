@@ -16,5 +16,10 @@ export default {
       name: "subSectionContent",
       type: "localeBlock"
     }
-  ]
+  ],
+  preview: {
+    select: {
+      title: "subHeading.nb"
+    }
+  }
 };
