@@ -9,6 +9,14 @@ export default {
       type: "localeString"
     },
     {
+      title: "Bilde",
+      name: "contentBoxImage",
+      type: "image",
+      options: {
+        hotspot: true
+      }
+    },
+    {
       title: "Innhold",
       name: "contentBoxBody",
       type: "localeBlock"
