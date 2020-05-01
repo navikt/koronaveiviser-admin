@@ -65,7 +65,7 @@ export default {
       inputComponent: Checkboxes,
       options: {
         list: [
-          { value: "forsiden", title: "Koronaveiviseren" },
+          { value: "koronaveiviseren", title: "Koronaveiviseren" },
           {
             value: "selvstendig-naeringsdrivende",
             title: "Selvstendig næringsdrivende"
