@@ -19,6 +19,7 @@ import snContentPage from "./selvstendig-naerinsgdrivende/content-page";
 import snPageSection from "./selvstendig-naerinsgdrivende/page-section";
 import snLinkBox from "./selvstendig-naerinsgdrivende/link-box";
 import snContentBox from "./selvstendig-naerinsgdrivende/content-box";
+import snExpandingBox from "./selvstendig-naerinsgdrivende/expanding-box";
 import snSubSection from "./selvstendig-naerinsgdrivende/sub-section";
 import snHero from "./selvstendig-naerinsgdrivende/hero";
 import { localeBlock, localeString, localeUrl } from "./utils/localization";
@@ -51,6 +52,7 @@ export default createSchema({
     snPageSection,
     snLinkBox,
     snContentBox,
+    snExpandingBox,
     snSubSection,
     snHero,
 

@@ -4,6 +4,11 @@ export default {
   type: "object",
   fields: [
     {
+      title: "Full bredde",
+      name: "fullWidth",
+      type: "boolean"
+    },
+    {
       title: "Overskrift",
       name: "linkBoxTitle",
       type: "localeString"

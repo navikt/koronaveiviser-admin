@@ -17,7 +17,7 @@ export default {
       title: "Seksjonsinnhold",
       name: "sectionContent",
       type: "array",
-      of: [{ type: "linkBox" }, { type: "contentBox" }]
+      of: [{ type: "linkBox" }, { type: "contentBox" }, {type: "expandingBox"}]
     },
     {
       name: "alertRefs",
