@@ -9,6 +9,11 @@ export default {
       type: "localeString"
     },
     {
+      title: "Metabeskrivelse",
+      name: "metaDescription",
+      type: "localeString"
+    },
+    {
       title: "Ingresstekst",
       description: "Valgfritt: legg inn en kort introduksjon",
       name: "pageIntroduction",
