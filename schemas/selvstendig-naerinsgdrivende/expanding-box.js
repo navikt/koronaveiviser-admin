@@ -5,28 +5,28 @@ export default {
   fields: [
     {
       title: "Overskrift",
-      name: "contentBoxTitle",
+      name: "expandingBoxTitle",
       type: "localeString"
     },
     {
       title: "Tekst for åpne-knapp",
-      name: "contentBoxOpenText",
+      name: "expandingBoxOpenText",
       type: "localeString"
     },
     {
       title: "Tekst for lukk-knapp",
-      name: "contentBoxCloseText",
+      name: "expandingBoxCloseText",
       type: "localeString"
     },
     {
       title: "Innhold",
-      name: "contentBoxBody",
+      name: "expandingBoxBody",
       type: "localeBlock"
     }
   ],
   preview: {
     select: {
-      title: "contentBoxTitle.nb"
+      title: "expandingBoxTitle.nb"
     }
   }
 };
