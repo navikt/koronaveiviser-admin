@@ -4,7 +4,12 @@ export default {
   type: "object",
   fields: [
     {
-      title: "Seksjonsnavn",
+      title: "Skjul overskrift",
+      name: "hideName",
+      type: "boolean"
+    },
+    {
+      title: "Seksjonsnavn/overskrift",
       name: "sectionName",
       type: "localeString"
     },
@@ -15,7 +20,7 @@ export default {
       of: [{ type: "linkBox" }, { type: "contentBox" }]
     },
     {
-      name: "alerts",
+      name: "alertRefs",
       title: "Varsler",
       type: "array",
       of: [{ type: "reference", to: [{ type: "alert"}] }]
