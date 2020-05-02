@@ -6,14 +6,22 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 // We import object and document schemas
 import alert from "./alert";
-import context from "./context";
-import infopanel from "./information";
-import informationOld from "./information-old";
+import context from "./koronaveiviser/context";
+import infopanel from "./koronaveiviser/information";
+import informationOld from "./koronaveiviser/information-old";
 import link from "./utils/link";
 import linkList from "./utils/link-list";
 import textBlockWithTitle from "./utils/text-block-with-title";
-import related from "./related";
-import page from "./page";
+import related from "./koronaveiviser/related";
+import page from "./koronaveiviser/page";
+import snFrontpage from "./selvstendig-naerinsgdrivende/frontpage";
+import snContentPage from "./selvstendig-naerinsgdrivende/content-page";
+import snPageSection from "./selvstendig-naerinsgdrivende/page-section";
+import snLinkBox from "./selvstendig-naerinsgdrivende/link-box";
+import snContentBox from "./selvstendig-naerinsgdrivende/content-box";
+import snExpandingBox from "./selvstendig-naerinsgdrivende/expanding-box";
+import snSubSection from "./selvstendig-naerinsgdrivende/sub-section";
+import snHero from "./selvstendig-naerinsgdrivende/hero";
 import { localeBlock, localeString, localeUrl } from "./utils/localization";
 import inforef from "./utils/information-ref";
 
@@ -37,6 +45,16 @@ export default createSchema({
     // Fjern etter at ny frontend er i prod
     informationOld,
     textBlockWithTitle,
+
+    // Selvstendig næringsdrivende
+    snFrontpage,
+    snContentPage,
+    snPageSection,
+    snLinkBox,
+    snContentBox,
+    snExpandingBox,
+    snSubSection,
+    snHero,
 
     // Localization
     localeString,
