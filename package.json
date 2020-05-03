@@ -1,7 +1,7 @@
 {
   "name": "koronaveiviser-admin",
   "private": true,
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "",
   "main": "package.json",
   "author": "Morte Jansrud <morten.jansrud@nav.no>",
