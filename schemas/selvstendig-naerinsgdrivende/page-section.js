@@ -17,13 +17,17 @@ export default {
       title: "Seksjonsinnhold",
       name: "sectionContent",
       type: "array",
-      of: [{ type: "linkBox" }, { type: "contentBox" }, {type: "expandingBox"}]
-    },
-    {
-      name: "alertRefs",
-      title: "Varsler",
-      type: "array",
-      of: [{ type: "reference", to: [{ type: "alert"}] }]
+      of: [
+        { type: "linkBox" },
+        { type: "contentBox" },
+        { type: "expandingBox" },
+        {
+          type: "reference",
+          title: "Varselstripe",
+          name: "alertRef",
+          to: [{ type: "alert" }]
+        }
+      ]
     }
   ],
   preview: {
