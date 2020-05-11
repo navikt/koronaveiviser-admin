@@ -11,10 +11,12 @@ export default {
     {
       title: "Reklameinnhold",
       name: "heroContent",
-      type: "localeBlock"
+      type: "array", 
+        of: [{ type: "localeBlock"}]
     },
     {
       title: "Reklamebilde",
+      description: "Valgfritt. Kun anbefalt når boksen står som øverste og viktigste element på siden",
       name: "heroImage",
       type: "image",
       options: {
@@ -23,13 +25,13 @@ export default {
     },
     {
       title: "Reklamelenketekst",
-      description: "Brukes som 'call to action' på lenke videre",
+      description: "Valgfritt. Brukes som 'call to action' på lenke videre.",
       name: "heroLinkText",
       type: "localeString"
     },
     {
       title: "Reklame URL",
-      description: "Dit vi skal lenke hen",
+      description: "Selve lenken videre. VIKTIG: hvis dette feltet står tomt, vil ikke lenkeknappen synes. This is a feature, not a bug :)",
       name: "heroURL",
       type: "localeUrl"
     }
