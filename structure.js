@@ -32,6 +32,10 @@ export default () =>
                 ({ spec }) => spec.id === "context"
               ),
 
+              ...S.documentTypeListItems().filter(
+                ({ spec }) => spec.id === "infopanel"
+              ),
+
               S.documentListItem()
                 .id("information")
                 .schemaType("information")
