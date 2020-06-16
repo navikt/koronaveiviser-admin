@@ -8,10 +8,8 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import alert from "./alert";
 import context from "./koronaveiviser/context";
 import infopanel from "./koronaveiviser/information";
-import informationOld from "./koronaveiviser/information-old";
 import link from "./utils/link";
 import linkList from "./utils/link-list";
-import textBlockWithTitle from "./utils/text-block-with-title";
 import related from "./koronaveiviser/related";
 import page from "./koronaveiviser/page";
 import snFrontpage from "./selvstendig-naerinsgdrivende/frontpage";
@@ -23,7 +21,7 @@ import snExpandingBox from "./selvstendig-naerinsgdrivende/expanding-box";
 import snSubSection from "./selvstendig-naerinsgdrivende/sub-section";
 import snHero from "./selvstendig-naerinsgdrivende/hero";
 import { localeBlock, localeString, localeUrl } from "./utils/localization";
-import inforef from "./utils/information-ref";
+import inforef from "./koronaveiviser/information-ref";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -41,10 +39,6 @@ export default createSchema({
     related,
     infopanel,
     inforef,
-
-    // Fjern etter at ny frontend er i prod
-    informationOld,
-    textBlockWithTitle,
 
     // Selvstendig næringsdrivende
     snFrontpage,
