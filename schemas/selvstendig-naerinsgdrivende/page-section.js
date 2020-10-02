@@ -21,6 +21,7 @@ export default {
         { type: "linkBox" },
         { type: "contentBox" },
         { type: "expandingBox" },
+        { type: "hero" },
         {
           type: "reference",
           title: "Varselstripe",

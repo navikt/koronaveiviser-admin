@@ -1,6 +1,5 @@
 import S from "@sanity/desk-tool/structure-builder";
 import person from "react-icons/lib/md/person";
-import info from "react-icons/lib/go/info";
 import list from "react-icons/lib/md/shuffle";
 import settings from "react-icons/lib/go/settings";
 import arrow from "react-icons/lib/md/subdirectory-arrow-right";
@@ -32,10 +31,9 @@ export default () =>
                 ({ spec }) => spec.id === "context"
               ),
 
-              S.documentListItem()
-                .id("information")
-                .schemaType("information")
-                .icon(info),
+              ...S.documentTypeListItems().filter(
+                ({ spec }) => spec.id === "infopanel"
+              ),
 
               S.documentListItem()
                 .id("related")
