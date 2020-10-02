@@ -11,8 +11,7 @@ export default {
     {
       title: "Reklameinnhold",
       name: "heroContent",
-      type: "array", 
-        of: [{ type: "localeBlock"}]
+      type: "localeBlock"
     },
     {
       title: "Reklamebilde",
