@@ -37,7 +37,7 @@ jobs:
           cat > .nais/vars.yaml <<EOF
           namespace: personbruker
           ingresses:
-            - https://koronaveiviser-admin.dev.nav.no
+            - https://koronaveiviser-admin.dev.intern.nav.no
           image: $IMAGE_REGISTRY/$IMAGE_NAME
           version: $IMAGE_VERSION
           EOF
