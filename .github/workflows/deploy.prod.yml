@@ -42,6 +42,7 @@ jobs:
           namespace: personbruker
           ingresses:
              - https://koronaveiviser-admin.intern.nav.no
+             - https://www.nav.no/person/koronaveiviser/admin
           image: $IMAGE_REGISTRY/$IMAGE_NAME
           version: $IMAGE_VERSION
           EOF
