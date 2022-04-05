@@ -44,6 +44,7 @@ jobs:
              - https://koronaveiviser-admin.intern.nav.no
           image: $IMAGE_REGISTRY/$IMAGE_NAME
           version: $IMAGE_VERSION
+          appName: koronaveiviser-admin
           EOF
       - uses: nais/deploy/actions/deploy@master
         env:
