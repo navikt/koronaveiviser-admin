@@ -1,16 +1,12 @@
-name: Deploy-to-prod
+name: Deploy-to-prod-2
 on:
-  release:
-    types: [released]
+  workflow_dispatch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Abort if branch is not master
-        if: github.event.release.target_commitish != 'master'
-        run: echo "Release is not on master, aborting"; exit 1;
       - name: Define build environment
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -32,6 +28,8 @@ jobs:
       - run: npm run build
       - name: Docker build and push
         run: |
+          rm -f sanity.json
+          cp sanity-2.json sanity.json
           echo $GITHUB_TOKEN | docker login $IMAGE_REGISTRY -u "x-access-token" --password-stdin
           docker build -t $IMAGE_REGISTRY/$IMAGE_NAME:$IMAGE_VERSION -t $IMAGE_REGISTRY/$IMAGE_NAME:latest .
           docker push $IMAGE_REGISTRY/$IMAGE_NAME:$IMAGE_VERSION
@@ -41,7 +39,7 @@ jobs:
           cat > .nais/vars.yaml <<EOF
           namespace: personbruker
           ingresses:
-             - https://koronaveiviser-admin.intern.nav.no
+             - https://www.nav.no/person/koronaveiviser/admin
           image: $IMAGE_REGISTRY/$IMAGE_NAME
           version: $IMAGE_VERSION
           EOF

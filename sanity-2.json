@@ -1,7 +1,8 @@
 {
   "root": true,
   "project": {
-    "name": "koronaveiviser-admin"
+    "name": "koronaveiviser-admin",
+    "basePath": "/person/koronaveiviser/admin"
   },
   "api": {
     "projectId": "34cdxjt2",
